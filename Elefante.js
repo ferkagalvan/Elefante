@@ -23,45 +23,45 @@ class Elefante{
         //trompa
 
         contextoDeDibujo.beginPath();
-        contextoDeDibujo.moveTo(this.X-20,this.Y+45);
-        contextoDeDibujo.lineTo(this.X+10,this.Y+45);
-        contextoDeDibujo.lineTo(this.X-30,this.Y-10);
+        contextoDeDibujo.moveTo(this.X+this.Ancho-155,this.Y+this.Altura-60);
+        contextoDeDibujo.lineTo(this.X+this.Ancho-110,this.Y+this.Altura-5);
+        contextoDeDibujo.lineTo(this.X+this.Ancho-140,this.Y+this.Altura-5);
 
         //ojo
-        contextoDeDibujo.moveTo(this.X+20,this.Y-25);
-        contextoDeDibujo.lineTo(this.X+10,this.Y-45);
-        contextoDeDibujo.lineTo(this.X+20,this.Y-55);
+        contextoDeDibujo.moveTo(this.X+this.Ancho/6,this.Y+this.Altura-80);
+        contextoDeDibujo.lineTo(this.X+this.Ancho/10,this.Y+this.Altura-90);
+        contextoDeDibujo.lineTo(this.X+this.Ancho/6,this.Y+this.Altura-100);
         ///cara
-        contextoDeDibujo.moveTo(this.X+10,this.Y+45);
-        contextoDeDibujo.lineTo(this.X+60,this.Y-10);
-        contextoDeDibujo.lineTo(this.X+60,this.Y-80);
-        contextoDeDibujo.lineTo(this.X,this.Y-80);
+        contextoDeDibujo.moveTo(this.X+this.Ancho-110,this.Y+this.Altura/2+20);
+        contextoDeDibujo.lineTo(this.X+this.Ancho-60,this.Y+this.Altura/2-30);
+        contextoDeDibujo.lineTo(this.X+this.Ancho/2,this.Y+this.Altura/2-105);
+        contextoDeDibujo.lineTo(this.X+this.Ancho-115,this.Y+this.Altura/2-105);
         //oreja
 
-        contextoDeDibujo.moveTo(this.X+60,this.Y-30);
-        contextoDeDibujo.lineTo(this.X+80,this.Y-20);
-        contextoDeDibujo.lineTo(this.X+80,this.Y-160);
-        contextoDeDibujo.lineTo(this.X,this.Y-80);
+        contextoDeDibujo.moveTo(this.X+this.Ancho/2,this.Y+this.Altura/2-50);
+        contextoDeDibujo.lineTo(this.X+this.Ancho/2+20,this.Y+this.Altura/2-45);
+        contextoDeDibujo.lineTo(this.X+this.Ancho/2+20,this.Y+this.Altura/2-190);
+        contextoDeDibujo.lineTo(this.X+this.Ancho/2-60,this.Y+this.Altura/2-104);
 
 
         //cuerpo y pata trasera.
-       contextoDeDibujo.moveTo(this.X+250,this.Y-30);
-        contextoDeDibujo.lineTo(this.X+220,this.Y+100);
-        contextoDeDibujo.lineTo(this.X+150,this.Y+100);
-        contextoDeDibujo.lineTo(this.X+78.6,this.Y-80);
+       contextoDeDibujo.moveTo(this.X+this.Ancho+125,this.Y+this.Altura-70);
+        contextoDeDibujo.lineTo(this.X+this.Ancho+100,this.Y+this.Altura+50);
+        contextoDeDibujo.lineTo(this.X+this.Ancho+30,this.Y+this.Altura+50);
+        contextoDeDibujo.lineTo(this.X+this.Ancho/2+20,this.Y+this.Altura-130);
 
         //pata delantera
 
-         contextoDeDibujo.moveTo(this.X+150,this.Y+20);
-         contextoDeDibujo.lineTo(this.X+120,this.Y+100);
-         contextoDeDibujo.lineTo(this.X+55,this.Y+100);
-         contextoDeDibujo.lineTo(this.X+91,this.Y-75);
+         contextoDeDibujo.moveTo(this.X+this.Ancho+30,this.Y+this.Altura-40);
+         contextoDeDibujo.lineTo(this.X+this.Ancho+5,this.Y+this.Altura+50);
+         contextoDeDibujo.lineTo(this.X+this.Ancho/2,this.Y+this.Altura+50);
+         contextoDeDibujo.lineTo(this.X+this.Ancho/2+28,this.Y+this.Altura-115);
 
          //cola
        
-        contextoDeDibujo.moveTo(this.X+245,this.Y-10);
-        contextoDeDibujo.lineTo(this.X+255,this.Y-10);
-        contextoDeDibujo.lineTo(this.X+270,this.Y+70);
+        contextoDeDibujo.moveTo(this.X+this.Ancho+124,this.Y+this.Altura-60);
+        contextoDeDibujo.lineTo(this.X+this.Ancho+130,this.Y+this.Altura-60);
+        contextoDeDibujo.lineTo(this.X+this.Ancho+140,this.Y+this.Altura+20);
 
 
 

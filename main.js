@@ -6,13 +6,13 @@ function crearElefante(){
 	var context = myCanvas.getContext("2d");
 
 	context.fillStyle="white";
-	context.fillRect(0,0,1400,768);
+	context.fillRect(0,0,1500,1500);
 
 
 		arregloElefante = new Array(
-			new Elefante("Faty",7,'black', 50, 120, 80, 300),
-			new Elefante("Gala",5,'black', 100, 200, 550, 300),
-			new Elefante("Rugo",10,'black', 140, 140, 950, 300)
+			new Elefante("Faty",7,'black', 50, 107, 80, 300),
+			new Elefante("Gala",5,'black', 50, 105, 550, 300),
+			new Elefante("Rugo",10,'black', 50, 110, 950, 300)
 			
 		);
 	for (var i = arregloElefante.length - 1; i >= 0; i--) {
@@ -32,7 +32,7 @@ function OrdenarElefanteTamañoMayor(){
 	var aux_x_j_1, aux_y_j_1;
 	for(var i = 2; i <= n; i++){
 		for(var j = 0; j <= n-i; j++){
-			if(arregloElefante[j].Altura < arregloElefante[j+1].Altura){
+			if(arregloElefante[j].Ancho < arregloElefante[j+1].Ancho){
 				//Intercambio
 				aux = arregloElefante[j+1];
 				aux_x_j = arregloElefante[j+1].X;
@@ -78,7 +78,7 @@ function OrdenarElefantePorNombre(){
 	var aux_x_j_1, aux_y_j_1;
 	for(var i = 2; i <= n; i++){
 		for(var j = 0; j <= n-i; j++){
-			if(arregloElefante[j].Altura > arregloElefante[j+1].Altura){
+			if(arregloElefante[j].Nombre > arregloElefante[j+1].Nombre){
 				//Intercambio
 				aux = arregloElefante[j+1];
 				aux_x_j = arregloElefante[j+1].X;
